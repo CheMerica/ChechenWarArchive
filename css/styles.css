@@ -5,12 +5,12 @@
 
 /* --- CSS Variables --- */
 :root {
-  --bg-primary: #0a0a0a;
-  --bg-card: #161616;
-  --text-primary: #f0ece4;
-  --text-secondary: #a39e93;
-  --text-muted: #6b6560;
-  --accent-gold: #c9a84c;
+--bg-primary: #3f0d0c;      /* deep burgundy background */
+--bg-card: #5a1a18;         /* slightly lighter burgundy for cards */
+--text-primary: #d8d0c5;    /* warm light gray for main text */
+--text-secondary: #d9c4a9;  /* warm tan for secondary text */
+--text-muted: #8d6f57;      /* muted brown for subtle text */
+--accent-gold: #d9b061;     /* your warm golden accent */
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Oswald', sans-serif;
   --font-ui: 'DM Sans', system-ui, sans-serif;
