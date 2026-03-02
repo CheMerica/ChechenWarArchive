@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chechen War Archive — Documenting History</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Chechen War Archive</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="heroes.html">Heroes</a></li>
+          <li><a href="#">Locations</a></li>
+          <li><a href="#">Timeline</a></li>
+          <li><a href="#">Battles</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-overlay"></div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Chechen War <em>Archive</em></h1>
+      <p class="hero-subtitle">Documenting the untold stories of courage, sacrifice, and resilience from the Chechen conflicts.</p>
+      <p class="hero-byline">By Shamil Imakaev</p>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="section" id="featured">
+      <div class="container">
+        <h2 class="section-title">Featured <em>Heroes</em></h2>
+        <p class="section-desc">Profiles of individuals whose bravery shaped the course of the Chechen conflicts.</p>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-image"><img src="images/Aslan_Maskhadov.jpg" alt="Aslan Maskhadov"></div>
+            <div class="card-body">
+              <h3 class="card-name">Aslan Maskhadov</h3>
+              <p class="card-village">Vedeno District</p>
+              <p class="card-years">1951 – 2005</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image"><img src="images/Dzhokhar_Dudayev.jpg" alt="Dzhokhar Dudayev"></div>
+            <div class="card-body">
+              <h3 class="card-name">Dzhokhar Dudayev</h3>
+              <p class="card-village">Yalkhori, Chechnya</p>
+              <p class="card-years">1944 – 1996</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image"><img src="images/Zelimkhan_Yandarbiyev.jpg" alt="Zelimkhan Yandarbiyev"></div>
+            <div class="card-body">
+              <h3 class="card-name">Zelimkhan Yandarbiyev</h3>
+              <p class="card-village">Staroy-Yurt</p>
+              <p class="card-years">1952 – 2004</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-image"><img src="images/Ruslan_Gelayev.jpg" alt="Ruslan Gelayev"></div>
+            <div class="card-body">
+              <h3 class="card-name">Ruslan Gelayev</h3>
+              <p class="card-village">Komsomolskoye</p>
+              <p class="card-years">1964 – 2004</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <aside class="section" id="stats">
+      <div class="container">
+        <h2 class="section-title">Archive <em>Overview</em></h2>
+        <div class="stats-row">
+          <div class="stat-block">
+            <div class="stat-number">247</div>
+            <div class="stat-label">Heroes Documented</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-number">84</div>
+            <div class="stat-label">Villages Recorded</div>
+          </div>
+          <div class="stat-block">
+            <div class="stat-number">36</div>
+            <div class="stat-label">Battles Cataloged</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-title">Chechen War Archive</div>
+          <p class="footer-brand-desc">An independent historical documentation project preserving the legacy of the Chechen Heroes</p>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Timeline</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chechen War Archive. By Shamil Imakaev.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.main-nav');
+    const overlay = document.querySelector('.nav-overlay');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      toggle.classList.toggle('open');
+      overlay.classList.toggle('active');
+    });
+    overlay.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle.classList.remove('open');
+      overlay.classList.remove('active');
+    });
+  </script>
+</body>
+</html>
