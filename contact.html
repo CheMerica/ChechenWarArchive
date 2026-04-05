@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Chechen War Archive</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">Chechen War Archive</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="heroes.html">Heroes</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="battles.html">Battles</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-overlay"></div>
+  </header>
+
+  <section class="hero hero-short">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Contact <em>Us</em></h1>
+      <p class="hero-subtitle">Contribute historical records, photographs, corrections, or inquiries to the archive.</p>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="section" id="resources">
+      <div class="container">
+        <h2 class="section-title">Research <em>Resources</em></h2>
+        <p class="section-desc">External archives and tools available to researchers, families, and anyone tracing the history of these wars.</p>
+
+        <ol class="services-list">
+
+          <li class="services-item">
+            <strong class="services-category">External Archives</strong>
+            <ul class="services-sublist">
+              <li><a href="https://t.me/qonahi_zama" target="_blank" rel="noopener">Qonahi Zama (Heroes Era)</a> — one of the largest Chechen war media archives online, collecting photographs, video footage, and first-hand accounts from both wars. The name means "Heroes Era" in Chechen.</li>
+              <li>Available 24/7 via Telegram — free account required to view full media</li>
+              <li>Content: combat photography, portraits of fighters, personal testimonies, unit histories</li>
+            </ul>
+          </li>
+
+          <li class="services-item">
+            <strong class="services-category">Identification Tools</strong>
+            <ul class="services-sublist">
+              <li><a href="https://yandex.com/images" target="_blank" rel="noopener">Yandex Reverse Image Search</a> — upload a photograph to find other instances of it across the web. Far more effective than Google for images from the post-Soviet world.</li>
+              <li>How to use: go to yandex.com/images, click the camera icon in the search bar, then upload or paste your image</li>
+              <li>Available 24/7, no account required — useful for identifying fighters, locations, and events in undated photographs</li>
+            </ul>
+          </li>
+
+          <li class="services-item">
+            <strong class="services-category">Submit to This Archive</strong>
+            <ul class="services-sublist">
+              <li>Accepts: photographs, biographies, battle accounts, corrections, and personal testimonies</li>
+              <li>Submissions reviewed personally — allow up to 7 days for a response</li>
+              <li>All contributions are credited to the source; anonymous submissions accepted on request</li>
+            </ul>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+
+          <aside class="contact-info-block">
+            <h3>Get in <em>Touch</em></h3>
+            <p>
+              The Chechen War Archive welcomes contributions from researchers, veterans, family members, and historians. Your submissions help preserve an accurate and complete record of this pivotal period in history.
+            </p>
+            <p>
+              All inquiries, corrections, and historical contributions are reviewed personally. Fields marked with an asterisk are required.
+            </p>
+
+            <div class="contact-item">
+              <span class="contact-item-label">Project</span>
+              <span class="contact-item-value">Chechen War Archive</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-label">Purpose</span>
+              <span class="contact-item-value">Historical Documentation</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-label">Creator</span>
+              <span class="contact-item-value">Shamil Imakaev</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-item-label">Focus</span>
+              <span class="contact-item-value">First &amp; Second Chechen Wars</span>
+            </div>
+          </aside>
+
+          <form class="contact-form" id="contactForm" method="post">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fullName">
+                  Full Name <span class="required-mark">*</span>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  placeholder="Your full name"
+                  required
+                >
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">
+                  Email Address <span class="required-mark">*</span>
+                </label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="your@email.com"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input
+                  class="form-control"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+1 (555) 000-0000"
+                  pattern="[0-9\+\(\)\-\s]{7,20}"
+                  maxlength="20"
+                >
+                <p class="form-hint">Optional — international formats accepted</p>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="subject">
+                  Subject <span class="required-mark">*</span>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Reason for contact"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contribution">
+                Contribution Type
+              </label>
+              <input
+                class="form-control"
+                type="text"
+                id="contribution"
+                name="contribution"
+                placeholder="e.g. Photograph, Biography, Correction, General Inquiry"
+                list="contribution-types"
+              >
+              <datalist id="contribution-types">
+                <option value="Photograph">
+                <option value="Biography or Profile">
+                <option value="Battle Account">
+                <option value="Correction">
+                <option value="General Inquiry">
+                <option value="Research Partnership">
+              </datalist>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">
+                Message <span class="required-mark">*</span>
+              </label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                placeholder="Your message, historical contribution, or inquiry. Please include as much detail as possible."
+                required
+                minlength="20"
+              ></textarea>
+              <p class="form-hint">Minimum 20 characters required.</p>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Message</button>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-brand-title">Chechen War Archive</div>
+          <p class="footer-brand-desc">An independent historical documentation project preserving the legacy of the Chechen conflicts.</p>
+        </div>
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="heroes.html">Heroes</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="battles.html">Battles</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chechen War Archive. By Shamil Imakaev.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

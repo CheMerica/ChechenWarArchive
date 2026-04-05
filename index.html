@@ -18,11 +18,10 @@
         <ul class="nav-list">
           <li><a href="index.html" class="active">Home</a></li>
           <li><a href="heroes.html">Heroes</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Timeline</a></li>
-          <li><a href="#">Battles</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="battles.html">Battles</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -114,10 +113,10 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="heroes.html">Heroes</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Timeline</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="battles.html">Battles</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -127,20 +126,6 @@
     </div>
   </footer>
 
-  <script>
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.main-nav');
-    const overlay = document.querySelector('.nav-overlay');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      toggle.classList.toggle('open');
-      overlay.classList.toggle('active');
-    });
-    overlay.addEventListener('click', () => {
-      nav.classList.remove('open');
-      toggle.classList.remove('open');
-      overlay.classList.remove('active');
-    });
-  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
