@@ -10,7 +10,7 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <a href="index.html" class="site-logo">Chechen War Archive</a>
+      <a href="index.html" class="site-logo"><img src="images/logo.png" alt="" class="site-logo-img">Chechen War Archive</a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -107,39 +107,76 @@
             </div>
           </aside>
 
-          <form class="contact-form" id="contactForm" method="post">
+          <form class="contact-form" id="contactForm" novalidate>
 
             <div class="form-row">
               <div class="form-group">
-                <label class="form-label" for="fullName">
-                  Full Name <span class="required-mark">*</span>
+                <label class="form-label" for="firstName">
+                  First Name <span class="required-mark">*</span>
                 </label>
                 <input
                   class="form-control"
                   type="text"
-                  id="fullName"
-                  name="fullName"
-                  placeholder="Your full name"
-                  required
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First name"
                 >
               </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">
+                  Last Name <span class="required-mark">*</span>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last name"
+                >
+              </div>
+            </div>
 
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="city">
+                  City <span class="required-mark">*</span>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="Your city"
+                >
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="zip">
+                  Zip Code <span class="required-mark">*</span>
+                </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="zip"
+                  name="zip"
+                  placeholder="e.g. 12345 or 12345-6789"
+                  maxlength="10"
+                >
+              </div>
+            </div>
+
+            <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="email">
                   Email Address <span class="required-mark">*</span>
                 </label>
                 <input
                   class="form-control"
-                  type="email"
+                  type="text"
                   id="email"
                   name="email"
                   placeholder="your@email.com"
-                  required
                 >
               </div>
-            </div>
-
-            <div class="form-row">
               <div class="form-group">
                 <label class="form-label" for="phone">Phone Number</label>
                 <input
@@ -148,25 +185,23 @@
                   id="phone"
                   name="phone"
                   placeholder="+1 (555) 000-0000"
-                  pattern="[0-9\+\(\)\-\s]{7,20}"
                   maxlength="20"
                 >
                 <p class="form-hint">Optional — international formats accepted</p>
               </div>
+            </div>
 
-              <div class="form-group">
-                <label class="form-label" for="subject">
-                  Subject <span class="required-mark">*</span>
-                </label>
-                <input
-                  class="form-control"
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  placeholder="Reason for contact"
-                  required
-                >
-              </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">
+                Subject <span class="required-mark">*</span>
+              </label>
+              <input
+                class="form-control"
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Reason for contact"
+              >
             </div>
 
             <div class="form-group">
@@ -200,7 +235,6 @@
                 id="message"
                 name="message"
                 placeholder="Your message, historical contribution, or inquiry. Please include as much detail as possible."
-                required
                 minlength="20"
               ></textarea>
               <p class="form-hint">Minimum 20 characters required.</p>
